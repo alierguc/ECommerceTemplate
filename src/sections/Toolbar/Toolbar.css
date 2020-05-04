@@ -1,0 +1,164 @@
+.toolbar {
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #CB397A;
+    height: 66px;
+}
+
+.toolbar__navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.toolbar__logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.toolbar__logo {
+    margin-left: 1rem;
+}
+.toolbar_navigation_items ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.toolbar_navigation_items a{
+    color: white;
+    text-decoration: none;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar__navigation_menu{
+    padding: 1rem 0;
+}
+
+.menu_link {
+    color: #8B95A1;
+    cursor: pointer;
+    font-weight: bold;
+}
+.menu_link:hover {
+    color: #212529;
+    
+
+}
+
+.product_category:hover{
+    @extend.dropdown-content;
+
+    
+
+    
+}
+.right-panel-selector{
+    width: 100rem;
+
+}
+
+
+ .product_category {
+     margin-left: 15px;
+ }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    border-radius: 20px;
+    margin-left: -80px;
+    padding: 25px;
+    padding-top: 13px;
+    width: 300px;
+    display: none;
+    position: absolute;
+    background-color: #F4F5F7;
+    z-index: 1;
+  }
+  
+  #panel{
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content a {
+    color: black;
+
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {display: block;
+   
+}
+li { 
+    display: table-cell; 
+    position: relative; 
+  
+
+  }
+  li {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    display: inline-block;
+ 
+    position: relative;
+  }
+  li:after {    
+     
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+
+    position: absolute;
+    background: #CB397A;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  li:hover:after { 
+     
+    width: 100%; 
+    margin-top: 30px;
+    left: 0; 
+  }
+
+@media (max-width: 768px) {
+    .toolbar_navigation_items {
+        display: none;
+    }
+    .toolbar__navigation {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .toolbar__toggle-button {
+        display: none;
+     
+        
+        
+    }
+
+    .toolbar__logo {
+        margin-right: 0;
+    }
+}

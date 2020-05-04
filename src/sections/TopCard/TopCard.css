@@ -1,0 +1,23 @@
+
+@media only screen and (min-width: 600px) {
+    .cardStyle{
+        margin: 10px;
+        padding: 8px;
+    }
+    .containerCardTop {
+        background-color: #F5DAE6;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cardStyle{
+        margin: 10px;
+        padding: 8px;
+    }
+
+   .containerCardTop {
+        background-color: #F5DAE6;
+        padding-top: 10px;
+    }
+  }
